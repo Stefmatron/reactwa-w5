@@ -8,13 +8,11 @@ function App() {
         <h1>
           Weather App
         </h1>
-        
       </header>
       <footer>
         This project was coded by Stefanie Neb and is {" "}
         <a href="https://github.com/Stefmatron/reactwa-w5.git"
-          target="_blank"
-          >
+          target="_blank" rel="noopener">
             open-sourced on Github.
         </a>
       </footer>
