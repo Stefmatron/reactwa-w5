@@ -1,7 +1,8 @@
 import React from "react";
 import icons from "./icons/cloudy.gif";
+import './App.css';
 
-export default function Weather() {
+function Weather() {
     return (
     <div className="Weather">
         <form>
@@ -36,5 +37,7 @@ export default function Weather() {
             </div>
         </div>
     </div>
-    )
+    );
 }
+
+export default Weather;
