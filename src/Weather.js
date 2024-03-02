@@ -1,6 +1,7 @@
 import React from "react";
 import icons from "./icons/cloudy.gif";
 import './App.css';
+import './index.css';
 
 function Weather() {
     return (
@@ -24,10 +25,20 @@ function Weather() {
             <li>Wednesday 17:00</li>
             <li>Mostly Cloudy</li>
         </ul>
-        <div className="row">
+        
+        <div className="row mt-3">
             <div className="col-6">
-                <img src={icons} height="40px" width="40px" ></img>
-                6ºC|ºF
+                <div className="clearfix">
+                <img
+                    src={icons} height="70px" width="70px"
+                    alt="cloudy icon"
+                    className="float-left"
+                />
+                <div className="float-left">
+                    <span className="temperature">6</span>
+                    <span className="unit">ºC|ºF</span>
+                </div>
+              </div>
             </div>
             <div className="col-6">
                 <ul>

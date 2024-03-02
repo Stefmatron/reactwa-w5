@@ -1,5 +1,6 @@
 
 import './App.css';
+import './index.css';
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <footer>
         This project was coded by Stefanie Neb and is {" "}
         <a href="https://github.com/Stefmatron/reactwa-w5.git"
-          target="_blank" rel="noopener">
+          target="_blank" rel="noopener noreferrer">
             open-sourced on Github.
         </a>
       </footer>

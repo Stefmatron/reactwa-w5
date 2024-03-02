@@ -1,13 +1,36 @@
 .Weather {
-border: 1x solid #dadde1;
+border: 1x solid hsl(213, 4%, 41%);
+border-radius: 5px;
+font-family: arial, sans-serif;
+color:rgb(135,135,135);
+}
+.Weather ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 
+.Weather .temperature {
+  font-size: 64px;
+  padding-top: 20px;
+  line-height: 64px;
+  font-weight: 400;
+  color: rgb(33,33,33);
+  
+} 
+.Weather img {
+  display: inline-block;
+  height: 64px;
+  margin-right: 10px;
+}
+.Weather .unit {
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  line-height: 1;
+  top: -32px;
+  margin-left: 5px;
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Weather h1 {
+  margin-top: 20px;
 }
