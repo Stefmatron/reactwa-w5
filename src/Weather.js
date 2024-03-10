@@ -1,9 +1,17 @@
 import React from "react";
 import icons from "./icons/cloudy.gif";
+import axios from "axios";
 import './App.css';
 import './index.css';
 
 function Weather() {
+    function handleResponse(response) {
+        console.log(response.data);
+    }
+    const apiKey="e7adc2474a6f594a66a403f63b2a2475";
+    let city ="New York";
+    let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
     return (
     <div className="Weather">
         <form>
